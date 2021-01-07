@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Profile">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo_profile"
+                android:layout_width="245dp"
+                android:layout_height="245dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/dimas" />
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_profile"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:text="@string/name_profile"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_profile"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:paddingBottom="16dp"
+                android:textStyle="bold"
+                android:text="Dicoding Account :"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_profile"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:paddingBottom="16dp"
+                android:text="@string/email_profile"/>
+
+        </LinearLayout>
+</RelativeLayout>
